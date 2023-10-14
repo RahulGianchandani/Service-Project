@@ -1,7 +1,7 @@
 {
   "name": "service-project",
   "version": "0.1.0",
-  "homepage": "https://rahulgianchandani.github.io/services",
+  "homepage": "https://rahulgianchandani.github.io/Service-Project",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
