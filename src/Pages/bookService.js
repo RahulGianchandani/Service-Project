@@ -2,14 +2,16 @@ import React, { useState } from "react";
 import Datetime from "react-datetime";
 import "react-datetime/css/react-datetime.css";
 import { Step, Stepper } from "react-form-stepper";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import moment from "moment";
-
+import axios from 'axios';
 const BookService = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const [serviceSelect, setServiceSelect] = useState(0);
   const [serviceName, setServiceName] = useState("");
   const [checked, setChecked] = useState(false);
- 
+
   const [date, setDate] = useState(
     moment().startOf("day").format("YYYY-MM-DD hh:mm")
   );
@@ -18,6 +20,7 @@ const BookService = () => {
     number: "",
     city: "",
     message: "",
+    serviceType: ""
   });
   console.log("formData", formData);
 
@@ -27,14 +30,39 @@ const BookService = () => {
 
     setFormData({ ...formData, [name]: value });
   };
-
   const handleNext = () => {
     if (currentPage != 1) {
       setCurrentPage(currentPage + 1)
     } else {
-      alert("UNDER WORK, THANKS")
+      axios.post('http://172.16.1.58:3000/services', { ...formData })
+        .then(res => {
+          if (res?.data?.success) {
+            toast.success('🦄 Application Submitted Successfully!', {
+              position: "top-right",
+              autoClose: 5000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              theme: "light",
+            });
+            setFormData({
+              name: "",
+              number: "",
+              city: "",
+              message: "",
+              serviceType: ""
+            })
+            setCurrentPage(0)
+          }
+        })
+        .catch(error => {
+          console.error(error);
+        });
     }
   };
+ 
 
   return (
     <div id="homePage">
@@ -63,11 +91,11 @@ const BookService = () => {
                     className="grid grid-cols-3 gap-5 max-sm:grid-cols-1"
                   >
                     <div
-                      className={`service service1  duration-300 h-52 ${serviceSelect === 1 && "SelectedService"
+                      className={`service service1  duration-300 h-52 ${formData?.serviceType === 1 && "SelectedService"
                         }`}
                       onClick={() => {
                         setServiceName("Service1");
-                        setServiceSelect(1);
+                        setFormData({ ...formData, serviceType: "ServiceType1" });
                       }}
                     >
                       <div className="relative mainTextDiv">
@@ -78,11 +106,11 @@ const BookService = () => {
                       </div>
                     </div>
                     <div
-                      className={`service service2  duration-300 h-52 ${serviceSelect === 2 && "SelectedService"
+                      className={`service service2  duration-300 h-52 ${formData?.serviceType === 2 && "SelectedService"
                         }`}
                       onClick={() => {
                         setServiceName("Service2");
-                        setServiceSelect(2);
+                        setFormData({ ...formData, serviceType: "ServiceType2" });
                       }}
                     >
                       <div className="relative mainTextDiv">
@@ -93,11 +121,11 @@ const BookService = () => {
                       </div>
                     </div>
                     <div
-                      className={`service service3  duration-300 h-52 ${serviceSelect === 3 && "SelectedService"
+                      className={`service service3  duration-300 h-52 ${formData?.serviceType === 3 && "SelectedService"
                         }`}
                       onClick={() => {
                         setServiceName("Service3");
-                        setServiceSelect(3);
+                        setFormData({ ...formData, serviceType: "ServiceType3" });
                       }}
                     >
                       <div className="relative mainTextDiv">
@@ -108,11 +136,11 @@ const BookService = () => {
                       </div>
                     </div>
                     <div
-                      className={`service service4  duration-300 h-52 ${serviceSelect === 4 && "SelectedService"
+                      className={`service service4  duration-300 h-52 ${formData?.serviceType === 4 && "SelectedService"
                         }`}
                       onClick={() => {
                         setServiceName("Service4");
-                        setServiceSelect(4);
+                        setFormData({ ...formData, serviceType: "ServiceType4" });
                       }}
                     >
                       <div className="relative mainTextDiv">
@@ -123,11 +151,11 @@ const BookService = () => {
                       </div>
                     </div>
                     <div
-                      className={`service service5  duration-300 h-52 ${serviceSelect === 5 && "SelectedService"
+                      className={`service service5  duration-300 h-52 ${formData?.serviceType === 5 && "SelectedService"
                         }`}
                       onClick={() => {
                         setServiceName("Service5");
-                        setServiceSelect(5);
+                        setFormData({ ...formData, serviceType: "ServiceType5" });
                       }}
                     >
                       <div className="relative mainTextDiv">
@@ -138,11 +166,11 @@ const BookService = () => {
                       </div>
                     </div>
                     <div
-                      className={`service service6  duration-300 h-52 b ${serviceSelect === 6 && "SelectedService"
+                      className={`service service6  duration-300 h-52 b ${formData?.serviceType === 6 && "SelectedService"
                         }`}
                       onClick={() => {
                         setServiceName("Service6");
-                        setServiceSelect(6);
+                        setFormData({ ...formData, serviceType: "ServiceType6" });
                       }}
                     >
                       <div className="relative mainTextDiv">
@@ -291,7 +319,7 @@ const BookService = () => {
                                 placeholder="Write message.."
                                 onChange={handleChange}
                               ></textarea>
-                              <input  onChange={(e) => setChecked(e.target.checked)} name="terms" type="checkbox" className="align-middle mr-2" id="checkBox" />
+                              <input onChange={(e) => setChecked(e.target.checked)} name="terms" type="checkbox" className="align-middle mr-2" id="checkBox" />
                               <label className="text-xs mb-12" for="checkBox">By submitting an application,<button type="button" className=" theme-blue-color cursor-pointer" data-bs-toggle="modal" data-bs-target="#termsModal">You agree to the terms and conditions and privacy policy.</button></label>
                             </form>
                           </div>
@@ -310,7 +338,7 @@ const BookService = () => {
               id="nxtBtn"
               className="disabled:cursor-not-allowed disabled:opacity-60"
               disabled={
-                (currentPage === 0 && serviceSelect === 0) ||
+                (currentPage === 0 && formData?.serviceType === "") ||
                 (currentPage === 1 &&
                   (formData?.name === "" ||
                     formData?.number === "" ||
@@ -346,13 +374,13 @@ const BookService = () => {
               <p>Lorep ipsum Lorep ipsum Lorep ipsum Lorep ipsum Lorep ipsum Lorep ipsum Lorep ipsum Lorep ipsum Lorep ipsum Lorep ipsum Lorep ipsum Lorep ipsum Lorep ipsum Lorep ipsum Lorep ipsum Lorep ipsum Lorep ipsum Lorep ipsum Lorep ipsum Lorep ipsum Lorep ipsum Lorep ipsum Lorep ipsum Lorep ipsum Lorep ipsum Lorep ipsum Lorep ipsum Lorep ipsum Lorep ipsum Lorep ipsum Lorep ipsum Lorep ipsum Lorep ipsum.</p>
             </div>
             <div class="modal-footer">
-              <button id="nxtBtnn"  type="button" class="btn btn-secondary" data-bs-dismiss="modal">Okay</button>
+              <button id="nxtBtnn" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Okay</button>
             </div>
           </div>
         </div>
       </div>
 
-
+      
     </div>
 
   );
