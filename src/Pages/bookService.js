@@ -91,93 +91,93 @@ const BookService = () => {
                     className="grid grid-cols-3 gap-5 max-sm:grid-cols-1"
                   >
                     <div
-                      className={`service service1  duration-300 h-52 ${formData?.serviceType === 1 && "SelectedService"
+                      className={`service service1  duration-300 h-52 ${formData?.serviceType === 1 ? "SelectedService" : ""
                         }`}
                       onClick={() => {
                         setServiceName("Service1");
                         setFormData({ ...formData, serviceType: "ServiceType1" });
                       }}
                     >
-                      <div className="relative mainTextDiv">
+                      <div className="relative ">
                         <h6 className="text-white text-center h2 mt-3 mb-6">
                           Service1
                         </h6>
-                        <div className="text-white text-center textDiv "></div>
+                        <div className="text-white text-center px-5 textDiv "> lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum</div>
                       </div>
                     </div>
                     <div
-                      className={`service service2  duration-300 h-52 ${formData?.serviceType === 2 && "SelectedService"
+                      className={`service service2  duration-300 h-52 ${formData?.serviceType === 2 ? "SelectedService" : ""
                         }`}
                       onClick={() => {
                         setServiceName("Service2");
                         setFormData({ ...formData, serviceType: "ServiceType2" });
                       }}
                     >
-                      <div className="relative mainTextDiv">
+                      <div className="relative ">
                         <h6 className="text-white text-center h2 xl:mt-3 mb-6 max-xl:mt-8">
                           Service2
                         </h6>
-                        <div className="text-white text-center textDiv "></div>
+                        <div className="text-white text-center px-5 textDiv "> lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum</div>
                       </div>
                     </div>
                     <div
-                      className={`service service3  duration-300 h-52 ${formData?.serviceType === 3 && "SelectedService"
+                      className={`service service3  duration-300 h-52 ${formData?.serviceType === 3 ? "SelectedService" : ""
                         }`}
                       onClick={() => {
                         setServiceName("Service3");
                         setFormData({ ...formData, serviceType: "ServiceType3" });
                       }}
                     >
-                      <div className="relative mainTextDiv">
+                      <div className="relative ">
                         <h6 className="text-white text-center h2 xl:mt-3 mb-6 max-xl:mt-8">
                           Service3
                         </h6>
-                        <div className="text-white text-center textDiv "></div>
+                        <div className="text-white text-center px-5 textDiv "> lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum</div>
                       </div>
                     </div>
                     <div
-                      className={`service service4  duration-300 h-52 ${formData?.serviceType === 4 && "SelectedService"
+                      className={`service service4  duration-300 h-52 ${formData?.serviceType === 4 ? "SelectedService" : ""
                         }`}
                       onClick={() => {
                         setServiceName("Service4");
                         setFormData({ ...formData, serviceType: "ServiceType4" });
                       }}
                     >
-                      <div className="relative mainTextDiv">
+                      <div className="relative ">
                         <h6 className="text-white text-center h2 xl:mt-3 mb-6 max-xl:mt-8">
                           Service4
                         </h6>
-                        <div className="text-white text-center textDiv "></div>
+                        <div className="text-white text-center px-5 textDiv "> lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum</div>
                       </div>
                     </div>
                     <div
-                      className={`service service5  duration-300 h-52 ${formData?.serviceType === 5 && "SelectedService"
+                      className={`service service5  duration-300 h-52 ${formData?.serviceType === 5 ? "SelectedService" : ""
                         }`}
                       onClick={() => {
                         setServiceName("Service5");
                         setFormData({ ...formData, serviceType: "ServiceType5" });
                       }}
                     >
-                      <div className="relative mainTextDiv">
+                      <div className="relative ">
                         <h6 className="text-white text-center h2 mt-3 mb-6">
                           Service5
                         </h6>
-                        <div className="text-white text-center textDiv "></div>
+                        <div className="text-white text-center px-5 textDiv "> lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum</div>
                       </div>
                     </div>
                     <div
-                      className={`service service6  duration-300 h-52 b ${formData?.serviceType === 6 && "SelectedService"
+                      className={`service service6  duration-300 h-52  ${formData?.serviceType === 6 ? "SelectedService" : ""
                         }`}
                       onClick={() => {
                         setServiceName("Service6");
                         setFormData({ ...formData, serviceType: "ServiceType6" });
                       }}
                     >
-                      <div className="relative mainTextDiv">
+                      <div className="relative ">
                         <h6 className="text-white text-center h2 mt-3 mb-6">
                           Service6
                         </h6>
-                        <div className="text-white text-center textDiv "></div>
+                        <div className="text-white text-center px-5 textDiv "> lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum</div>
                       </div>
                     </div>
                   </div>
