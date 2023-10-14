@@ -3,7 +3,7 @@ import logo from '../images/logo.svg'
 import { NavLink, useLocation } from 'react-router-dom'
 import { RxHamburgerMenu } from 'react-icons/rx'
 const Header = () => {
-
+    const token = localStorage.getItem('token');
     const [navBg, setNavBg] = useState(false);
 
     const changeNavBg = () => {
@@ -21,7 +21,9 @@ const Header = () => {
     }, [])
 
     const location = useLocation();
-
+    const logout = () => {
+        localStorage.removeItem('token');
+    }
     return (
         <nav class={`navbar navbar-expand-lg header ${navBg ? "sticky" : ""} max-sm:py-0 bg-black  `}>
             <div class="container-fluid px-64 py-0">
@@ -71,19 +73,24 @@ const Header = () => {
                         >
                             Book Services
                         </NavLink>
-                        <NavLink
-                            to="/admin-login"
-                            className={" text-decoration-none text-white ms-lg-5 fw-bold"}
-                        >
-                            Admin
-                        </NavLink>
-                        {true &&
+                        {!token === "admin" &&
+                            <NavLink
+                                to="/admin-login"
+                                className={" text-decoration-none text-white ms-lg-5 fw-bold"}
+                            >
+                                Admin
+                            </NavLink>
+                        }
+                        {token === "admin" &&
                             <NavLink
                                 to="/admin-dashboard"
                                 className={" text-decoration-none text-white ms-lg-5 fw-bold"}
                             >
                                 Dashboard
                             </NavLink>
+                        }
+                        {token === "admin" &&
+                            <span className='text-sm cursor-pointer ms-lg-5 fw-bold text-white' onClick={logout}> Logout</span>
                         }
 
                     </ul>

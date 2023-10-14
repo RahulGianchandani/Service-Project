@@ -13,8 +13,9 @@ import Login from './Pages/login';
 import { ToastContainer } from 'react-toastify';
 import AdminDashboard from './Pages/dashboard';
 
-
 export default function App() {
+  const token = localStorage.getItem('token');
+
   return (
     <Router>
       <Header />
@@ -24,7 +25,9 @@ export default function App() {
         <Route path="/Service-Project" element={<Home />} />
         <Route path="/book-service" element={<BookService />} />
         <Route path="/admin-login" element={<Login />} />
-        <Route path="/admin-dashboard" element={<AdminDashboard />} />
+        {token === "admin" &&
+          <Route path="/admin-dashboard" element={<AdminDashboard />} />
+        }
       </Routes>
       <ToastContainer />
       <Footer />

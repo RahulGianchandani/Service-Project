@@ -62,7 +62,6 @@ const BookService = () => {
         });
     }
   };
- 
 
   return (
     <div id="homePage">
@@ -91,8 +90,7 @@ const BookService = () => {
                     className="grid grid-cols-3 gap-5 max-sm:grid-cols-1"
                   >
                     <div
-                      className={`service service1  duration-300 h-52 ${formData?.serviceType === 1 ? "SelectedService" : ""
-                        }`}
+                      className={`service service1  duration-300 h-52 ${serviceName === "Service1" ? "SelectedService" : ""}`}
                       onClick={() => {
                         setServiceName("Service1");
                         setFormData({ ...formData, serviceType: "ServiceType1" });
@@ -106,8 +104,7 @@ const BookService = () => {
                       </div>
                     </div>
                     <div
-                      className={`service service2  duration-300 h-52 ${formData?.serviceType === 2 ? "SelectedService" : ""
-                        }`}
+                      className={`service service2  duration-300 h-52 ${serviceName === "Service2" ? "SelectedService" : ""}`}
                       onClick={() => {
                         setServiceName("Service2");
                         setFormData({ ...formData, serviceType: "ServiceType2" });
@@ -121,8 +118,7 @@ const BookService = () => {
                       </div>
                     </div>
                     <div
-                      className={`service service3  duration-300 h-52 ${formData?.serviceType === 3 ? "SelectedService" : ""
-                        }`}
+                      className={`service service3  duration-300 h-52 ${serviceName === "Service3" ? "SelectedService" : ""}`}
                       onClick={() => {
                         setServiceName("Service3");
                         setFormData({ ...formData, serviceType: "ServiceType3" });
@@ -136,8 +132,7 @@ const BookService = () => {
                       </div>
                     </div>
                     <div
-                      className={`service service4  duration-300 h-52 ${formData?.serviceType === 4 ? "SelectedService" : ""
-                        }`}
+                      className={`service service4  duration-300 h-52 ${serviceName === "Service4" ? "SelectedService" : ""}`}
                       onClick={() => {
                         setServiceName("Service4");
                         setFormData({ ...formData, serviceType: "ServiceType4" });
@@ -151,8 +146,7 @@ const BookService = () => {
                       </div>
                     </div>
                     <div
-                      className={`service service5  duration-300 h-52 ${formData?.serviceType === 5 ? "SelectedService" : ""
-                        }`}
+                      className={`service service5  duration-300 h-52 ${serviceName === "Service5" ? "SelectedService" : ""}`}
                       onClick={() => {
                         setServiceName("Service5");
                         setFormData({ ...formData, serviceType: "ServiceType5" });
@@ -166,8 +160,7 @@ const BookService = () => {
                       </div>
                     </div>
                     <div
-                      className={`service service6  duration-300 h-52  ${formData?.serviceType === 6 ? "SelectedService" : ""
-                        }`}
+                      className={`service service6  duration-300 h-52  ${serviceName === "Service6" ? "SelectedService" : ""}`}
                       onClick={() => {
                         setServiceName("Service6");
                         setFormData({ ...formData, serviceType: "ServiceType6" });
@@ -380,7 +373,7 @@ const BookService = () => {
         </div>
       </div>
 
-      
+
     </div>
 
   );

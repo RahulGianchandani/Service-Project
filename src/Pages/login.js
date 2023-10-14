@@ -22,6 +22,7 @@ const Login = () => {
       .then(res => {
         console.log(res);
         if (res?.data?.success) {
+          localStorage.setItem('token', 'admin');
           toast.success('Logged In Successfully!', {
             position: "top-right",
             autoClose: 5000,
