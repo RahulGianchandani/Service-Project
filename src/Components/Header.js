@@ -73,14 +73,14 @@ const Header = () => {
                         >
                             Book Services
                         </NavLink>
-                        {!token === "admin" &&
+                        {/* {!token === "admin" && */}
                             <NavLink
                                 to="/admin-login"
                                 className={" text-decoration-none text-white ms-lg-5 fw-bold"}
                             >
                                 Admin
                             </NavLink>
-                        }
+                        {/* } */}
                         {/* {token === "admin" && */}
                             <NavLink
                                 to="/admin-dashboard"
