@@ -456,6 +456,7 @@ input[type=number] {
 #formSec input[type=text],
 #formSec input[type=email],
 #formSec input[type=number],
+#formSec input[type=password],
 select,
 textarea {
   width: 100%;
@@ -628,7 +629,7 @@ textarea {
 /************ APPOINTMENT PAGE ENDS   ************/
 #nxtBtnn {
   background-color: rgb(51, 133, 215);
- 
+
   font-weight: 600;
   padding: 10px 30px;
   border-radius: 50px;
@@ -639,7 +640,7 @@ textarea {
 
 #prvBtnn {
   background-color: #8d8d8d;
- 
+
   font-weight: 600;
   padding: 10px 30px;
   border-radius: 50px;
@@ -648,6 +649,27 @@ textarea {
   transition: 0.5s;
 }
 
+#loginPage label:where([for=pass], [for=email])::after,
+#forgotPass label:where([for=email])::after {
+  content: "*";
+  color: rgb(255, 0, 0);
+  margin-left: 2px;
+  font-weight: bolder;
+}
+
+#loginPage::before {
+  content: "";
+  background: url("https://source.unsplash.com/random/?login") no-repeat center center/cover;
+  /* background: transparent; */
+  position: absolute;
+  /* top: 70px; */
+  height: 100%;
+  width: 100%;
+  z-index: -99;
+  /* opacity: 0.8; */
+  /* right: 300px; */
+  /* filter: blur(1px) brightness(0.3); */
+}
 
 /* media query */
 @media (width < 565px) {

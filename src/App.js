@@ -9,6 +9,7 @@ import Home from './Pages/home';
 import Footer from './Components/Footer';
 
 import BookService from './Pages/bookService';
+import Login from './Pages/login';
 
 
 export default function App() {
@@ -16,10 +17,11 @@ export default function App() {
     <Router>
       <Header />
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/Service-Project" element={<Home />} />
         <Route path="/book-service" element={<BookService />} />
-        <Route path="/" element={<Home />} />
+        <Route path="/admin-login" element={<Login />} />
    
       </Routes>
       <Footer />

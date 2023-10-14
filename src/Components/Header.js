@@ -72,6 +72,12 @@ const Header = () => {
                         >
                             Book Services
                         </NavLink>
+                        <NavLink
+                            to="/admin-login"
+                            className={" text-decoration-none text-white ms-lg-5 fw-bold"}
+                        >
+                            Admin
+                        </NavLink>
 
                     </ul>
                 </div>
