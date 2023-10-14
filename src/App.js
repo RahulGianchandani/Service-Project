@@ -17,6 +17,7 @@ export default function App() {
       <Header />
       <Routes>
         <Route path="/home" element={<Home />} />
+        <Route path="/Service-Project" element={<Home />} />
         <Route path="/book-service" element={<BookService />} />
         <Route path="/" element={<Home />} />
    
