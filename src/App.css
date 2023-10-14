@@ -1,0 +1,675 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  font-family: "Jost", Helvetica, Arial, sans-serif;
+}
+
+.theme-blue-color {
+  color: #3385d7;
+}
+
+.theme-dark-blue {
+  color: #1f2e88;
+}
+
+/************ HEADER  ************/
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+.header a.active {
+  color: #3385d7 !important;
+}
+
+
+
+
+.header.sticky {
+  background-color: #000000;
+
+}
+
+.header ul a {
+  font-size: 14px;
+}
+
+/************ HEADER ENDS  ************/
+
+
+/************ FOOTER  ************/
+footer#footer {
+  /* background-image: url(./images/dentist4-footer-bg.webp); */
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-color: #000000;
+}
+
+footer #footer-top {
+  padding: 100px 0px;
+}
+
+footer #footer-top section h4 {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  color: white;
+
+}
+
+footer #footer-top section h5 {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  color: #3385d7;
+}
+
+footer #footer-top section p {
+  font-size: 18px;
+  color: white;
+
+}
+
+footer #footer-top section a {
+  font-size: 18px;
+  color: #3385d7;
+  text-decoration: none;
+  font-weight: 600;
+  display: block;
+}
+
+footer #footer-top section a:hover {
+  font-size: 18px;
+  color: white;
+
+}
+
+footer #footer-top section img {
+  width: 9rem;
+  /* filter: brightness(0) invert(1); */
+}
+
+footer #footer-bottom {
+  padding: 22px 0px 22px 0px;
+  /* margin-top: 10px; */
+  font-size: 18px;
+  display: flex;
+  font-weight: bold;
+  color: white;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-top: 1px solid rgba(255, 255, 255, .1);
+  text-align: center;
+}
+
+footer .whatsappICON {
+  position: fixed;
+  font-size: 30px;
+  color: white;
+  background-color: rgb(22, 240, 14);
+  border-radius: 50%;
+  padding: 5px;
+  bottom: 15px;
+  left: 15px;
+
+}
+
+/************ FOOTER ENDS  ************/
+
+
+/************ HOME LANDING PAGE   ************/
+
+/******** header   ********/
+
+#homePage header #leftSideHeader {
+  height: 960px;
+  /* width: 100%; */
+  position: relative;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  justify-items: end;
+  text-align: end;
+}
+
+#homePage header #leftSideHeader::before {
+  content: "";
+  background: url(./images/dentist4-slider-bg.webp) no-repeat center center /cover;
+  height: 100%;
+  /* width: 100%; */
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  z-index: -1;
+  background-color: #000000;
+  transform: scaleX(-1);
+  /* filter: brightness(0.4); */
+
+}
+
+#homePage header #leftSideHeader h6 {
+  font-weight: 700;
+  color: rgb(51, 133, 215);
+}
+
+#homePage header #leftSideHeader h1 {
+  font-size: 55px;
+}
+
+#homePage header #leftSideHeader p {
+  width: 40%;
+}
+
+#homePage header #leftSideHeader button {
+  background-color: rgb(51, 133, 215);
+  margin-top: 40px;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 18px 43px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  transition: 0.5s;
+}
+
+#homePage header #leftSideHeader button:hover {
+  background-color: #78b1ec;
+}
+
+#homePage header #rightSideHeader {
+  padding-top: 200px;
+  padding-bottom: 100px;
+  background-color: #3043b8;
+  background-image: url(./images/dentist4-slider-pic1.webp);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+/******** services   ********/
+
+#homePage #serviceSec .service {
+  /* height: 400px; */
+  position: relative;
+  overflow: hidden;
+}
+
+#homePage #serviceSec .service::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  /* filter: blur(0px) brightness(0.4); */
+}
+
+#homePage #serviceSec .service1::before {
+  background: url("https://source.unsplash.com/random/?gradient") no-repeat center center/cover;
+}
+
+#homePage #serviceSec .service2::before {
+  background: url("https://source.unsplash.com/random/?gradient") no-repeat center center/cover;
+}
+
+#homePage #serviceSec .service3::before {
+  background: url("https://source.unsplash.com/random/?gradient") no-repeat center center/cover;
+}
+
+#homePage #serviceSec .service4::before {
+  background: url("https://source.unsplash.com/random/?gradient") no-repeat center center/cover;
+}
+
+#homePage #serviceSec .service5::before {
+  background: url("https://source.unsplash.com/random/?gradient") no-repeat center center/cover;
+}
+
+#homePage #serviceSec .service6::before {
+  background: url("https://source.unsplash.com/random/?gradient") no-repeat center center/cover;
+}
+
+#homePage #serviceSec .service:hover .mainTextDiv:before {
+  height: 100%;
+  background-position: top;
+}
+
+#homePage #serviceSec .service .mainTextDiv {
+  transform: translateY(300px);
+  transition: 1000ms;
+}
+
+#homePage #serviceSec .service .mainTextDiv:before {
+  content: "";
+  z-index: -1;
+  inset: 0;
+  position: absolute;
+  background-image: linear-gradient(0deg, #3385d7, transparent 100%);
+  /* background-position: bottom; */
+  transition: background-position 1s, height 1s;
+  height: 22%;
+  top: 0;
+}
+
+#homePage #serviceSec .service:hover>.mainTextDiv {
+  transform: translateY(0px);
+}
+
+#homePage #serviceSec .service .textDiv {
+  /* opacity: 0; */
+  transition: 500ms;
+}
+
+#homePage #serviceSec .service:hover .textDiv {
+  /* opacity: 1; */
+}
+
+#homePage #serviceSec .service button::before {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 2px;
+  margin-top: -1px;
+  content: '';
+  z-index: -1;
+  -webkit-transition: -webkit-transform 0.3s, opacity .3s;
+  -moz-transition: -moz-transform 0.3s, opacity .3s;
+  transition: transform 0.3s, opacity .3s;
+  pointer-events: none;
+  background: #3385d7
+}
+
+#homePage #serviceSec .service button::after {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  margin-top: -1px;
+  content: '';
+  z-index: -1;
+  -webkit-transition: -webkit-transform 0.3s, opacity .3s;
+  -moz-transition: -moz-transform 0.3s, opacity .3s;
+  transition: transform 0.3s, opacity .3s;
+  pointer-events: none;
+  background: #3385d7
+}
+
+button:hover::before {
+  transform: rotate(45deg);
+  top: 19px !important;
+  opacity: 0.5;
+  background: #3f3c3c !important;
+}
+
+button:hover::after {
+  transform: rotate(-45deg);
+  bottom: 18px !important;
+  opacity: 0.5;
+  background: #3f3c3c !important;
+}
+
+/*******  testimonials *********/
+
+#homePage #testimonSec .testiImg img {
+  /* height: 700px; */
+}
+
+/****** patient experiences *****/
+#homePage #expSec {
+  background-color: #3043b8;
+  background-image: url(./images/dentist4-section-bg8.webp);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+/****** patient transformations *****/
+
+#homePage #transformSec .transform-img-mainDiv {
+  width: 623px;
+  transition: 600ms;
+  height: 212px;
+}
+
+#homePage #transformSec .transform-img-mainDiv:hover {
+  /* filter: brightness(0.7); */
+}
+
+
+#homePage #transformSec .transform-img-mainDiv:hover::before,
+#homePage #transformSec .transform-img-mainDiv:hover::after {
+  opacity: 1;
+}
+
+#homePage #transformSec .transform-img-mainDiv::before {
+  content: "Before";
+  color: #fff;
+  opacity: 0;
+  transition: 600ms;
+  font-size: 13px;
+  letter-spacing: .1em;
+  z-index: 2;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  line-height: 38px;
+  padding: 0 20px;
+  border-radius: 2px;
+  top: 100px;
+  left: 10px;
+}
+
+#homePage #transformSec .transform-img-mainDiv::after {
+  content: "After";
+  opacity: 0;
+  transition: 600ms;
+  color: #fff;
+  font-size: 13px;
+  letter-spacing: .1em;
+  z-index: 2;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  line-height: 38px;
+  padding: 0 20px;
+  top: 100px;
+  right: 0;
+  border-radius: 2px;
+  right: 10px;
+}
+
+#homePage #transformSec .transform-images {
+  object-fit: fill !important;
+}
+
+/************ HOME LANDING PAGE ENDS   ************/
+
+/************ CONTACT PAGE STARTS   ************/
+
+#contactPage header {
+  height: 960px;
+  /* width: 100%; */
+  position: relative;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  justify-items: end;
+  text-align: end;
+}
+
+
+#contactPage header::before {
+  content: "";
+  background: url(./images/dentist4-slider-bg.webp) no-repeat center center /cover;
+  height: 100%;
+  /* width: 100%; */
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  z-index: -1;
+  background-color: #000000;
+  transform: scaleX(-1);
+  /* filter: brightness(0.4); */
+
+}
+
+#contactPage header h6 {
+  font-weight: 700;
+  color: rgb(51, 133, 215);
+}
+
+#contactPage header h1 {
+  font-size: 55px;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#formSec input[type=text],
+#formSec input[type=email],
+#formSec input[type=number],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  font-size: 14px;
+  margin-bottom: 16px;
+  resize: vertical;
+
+}
+
+#formSec input:focus,
+#formSec textarea:focus {
+  color: #3385d7;
+  background-color: rgba(212, 228, 246, 1) !important;
+  border-color: #d5e5ee;
+  border: none !important;
+  outline: none !important;
+  caret-color: #1f2e88;
+
+}
+
+#formSec input[type=submit] {
+  background-color: #3385d7;
+  padding: 16px 42px;
+  border-width: 0px;
+  transition: 300ms;
+  border-radius: 36px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  caret-color: #1f2e88;
+  border: none;
+  cursor: pointer;
+}
+
+#formSec input[type=submit]:hover {
+  background-color: #5ea0e8;
+}
+
+#formSec form {
+  padding: 80px 40px 0px;
+  background-color: #ffffff;
+  margin-top: -60px;
+  border-radius: 50px;
+  box-shadow: 2px 44px 32px 2px rgba(0, 0, 0, 0.02);
+  border-radius: 60px;
+  transform: translateY(-75px);
+
+}
+
+/************ CONTACT PAGE ENDS   ************/
+
+
+/************ TRANSFORMATIONS PAGE STARTS   ************/
+#appointSec .appointDiv {
+  padding: 60px 5% 70px;
+  background-color: #3043b8;
+  border-radius: 60px
+}
+
+#appointSec .appointDiv button {
+  background-color: rgb(51, 133, 215);
+  margin-top: 30px;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 18px 43px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  transition: 0.5s;
+}
+
+#appointSec .appointDiv button:hover {
+  background-color: #78b1ec;
+}
+
+/************ TRANSFORMATIONS PAGE ENDS   ************/
+
+
+
+/************ APPOINTMENT PAGE STARTS   ************/
+#appointFormSec #nxtBtn {
+  background-color: rgb(51, 133, 215);
+  margin-top: 40px;
+  font-weight: 600;
+  padding: 10px 30px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  transition: 0.5s;
+}
+
+#appointFormSec #prvBtn {
+  background-color: #8d8d8d;
+  margin-top: 40px;
+  font-weight: 600;
+  padding: 10px 30px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  transition: 0.5s;
+}
+
+
+
+#homePage #appointFormSec #serviceSec .service .mainTextDiv {
+  transform: translateY(130px);
+  transition: 1000ms;
+}
+
+#homePage #appointFormSec #serviceSec .service .mainTextDiv:before {
+  height: 200%;
+}
+
+#homePage #appointFormSec #serviceSec .service:hover,
+#homePage #appointFormSec #DtLocSec .maps:hover {
+  filter: brightness(0.8);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  cursor: pointer;
+}
+
+#homePage #appointFormSec .SelectedService {
+  filter: brightness(0.8);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  cursor: pointer;
+  border: solid #1f2e88;
+
+}
+
+#homePage #appointFormSec #DtLocSec .mapsDiv:before {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  /* background-color: #000000; */
+  cursor: pointer;
+  transition: 300ms;
+}
+
+#homePage #appointFormSec #DtLocSec .mapsDiv:hover:before {
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+#homePage #appointFormSec #formSec form {
+  transform: translateY(0px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+
+}
+
+#appointFormSec .step1.active,
+#appointFormSec .step2.active,
+#appointFormSec .step3.active {
+  background-color: #3385d7;
+}
+
+#appointFormSec .step1.completed,
+#appointFormSec .step2.completed,
+#appointFormSec .step3.completed {
+  background-color: #1f2e88;
+}
+
+
+
+/************ APPOINTMENT PAGE ENDS   ************/
+#nxtBtnn {
+  background-color: rgb(51, 133, 215);
+ 
+  font-weight: 600;
+  padding: 10px 30px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  transition: 0.5s;
+}
+
+#prvBtnn {
+  background-color: #8d8d8d;
+ 
+  font-weight: 600;
+  padding: 10px 30px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  transition: 0.5s;
+}
+
+
+/* media query */
+@media (width < 565px) {
+  #homePage #transformSec .transform-img-mainDiv {
+    width: auto;
+    transition: 600ms;
+    height: 212px;
+  }
+
+  footer #footer-bottom {
+    padding: 22px 10px 22px 10px;
+  }
+
+  .testiImg {
+    display: none;
+  }
+
+  #homePage header #leftSideHeader {
+    height: auto;
+  }
+
+  #homePage header #leftSideHeader p {
+    width: auto;
+  }
+}
