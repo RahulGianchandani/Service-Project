@@ -42,7 +42,7 @@ const BookService = () => {
 
       <section id="appointFormSec">
         <h1 className="text-center h1 theme-blue-color  mb-24 pt-32 max-md:pt-14 max-md:mb-10">
-          Select a Service
+          Book a Service
         </h1>
         <div className="container pb-36 max-md:pb-12">
           <Stepper activeStep={currentPage} className="mb-14 max-md:mb-6">
@@ -262,7 +262,7 @@ const BookService = () => {
                       <section id="formSec" className=" bg-[#ffffff12] mt-4">
                         <div className="container pt-16 pb-10 max-md:pb-2">
                           <div className="d-flex justify-center gap-16">
-                            <form className=" bg-slate-400  ">
+                            <form className=" bg-slate-400 max-w-[800px] ">
                               <input
                                 type="text"
                                 id="name"
