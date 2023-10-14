@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/services/static/css/main.194c47a6.css",
+    "main.js": "/services/static/js/main.e8b7d6fa.js",
+    "static/js/787.441ceeda.chunk.js": "/services/static/js/787.441ceeda.chunk.js",
+    "static/media/test3.jpg": "/services/static/media/test3.ad9867d13f9fcb061288.jpg",
+    "static/media/test5.jpg": "/services/static/media/test5.cc49e794d0292be0137b.jpg",
+    "static/media/rona-after.jpeg": "/services/static/media/rona-after.10a8a5f2144595ddb544.jpeg",
+    "static/media/test4.jpg": "/services/static/media/test4.cca67a3c7d482aa94e10.jpg",
+    "static/media/dentist4-slider-pic1.webp": "/services/static/media/dentist4-slider-pic1.df10a15076b69b682b03.webp",
+    "static/media/test2.jpg": "/services/static/media/test2.1f2540d2f1145be41a38.jpg",
+    "static/media/bf3before.png": "/services/static/media/bf3before.eedbf8183000425b3acd.png",
+    "static/media/bf2before.png": "/services/static/media/bf2before.c44d725c219fae1697a1.png",
+    "static/media/bf1before.png": "/services/static/media/bf1before.da4fa2ef72949a60f38b.png",
+    "static/media/bf3after.png": "/services/static/media/bf3after.bebf09459db06f2cfdd9.png",
+    "static/media/bf4after.png": "/services/static/media/bf4after.63a69fc5e92af7594408.png",
+    "static/media/test6.jpg": "/services/static/media/test6.1b8bfa3b92a1bd7ceb7e.jpg",
+    "static/media/bf4before.png": "/services/static/media/bf4before.ab84c4660682f1fd509e.png",
+    "static/media/bf6after.png": "/services/static/media/bf6after.9a31304244d13ed0f016.png",
+    "static/media/bf6before.png": "/services/static/media/bf6before.75ea7fd48f7dc3e74637.png",
+    "static/media/bf1after.png": "/services/static/media/bf1after.cac565a15878255af2c9.png",
+    "static/media/bf2after.png": "/services/static/media/bf2after.637c134e737bfeff26b9.png",
+    "static/media/bf5before.png": "/services/static/media/bf5before.0bc091646474633d5495.png",
+    "static/media/bf5after.png": "/services/static/media/bf5after.680f25592198b5833c04.png",
+    "static/media/dentist4-slider-bg.webp": "/services/static/media/dentist4-slider-bg.709698698a477d54b6be.webp",
+    "static/media/dentist4-section-bg8.webp": "/services/static/media/dentist4-section-bg8.4dcb6469bb7d0e9bd8c4.webp",
+    "static/media/logo.svg": "/services/static/media/logo.458810443dc68c2900e6c985078e8f99.svg",
+    "index.html": "/services/index.html",
+    "main.194c47a6.css.map": "/services/static/css/main.194c47a6.css.map",
+    "main.e8b7d6fa.js.map": "/services/static/js/main.e8b7d6fa.js.map",
+    "787.441ceeda.chunk.js.map": "/services/static/js/787.441ceeda.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.194c47a6.css",
+    "static/js/main.e8b7d6fa.js"
+  ]
+}
