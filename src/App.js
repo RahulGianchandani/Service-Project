@@ -25,9 +25,9 @@ export default function App() {
         <Route path="/Service-Project" element={<Home />} />
         <Route path="/book-service" element={<BookService />} />
         <Route path="/admin-login" element={<Login />} />
-        {token === "admin" &&
+        {/* {token === "admin" && */}
           <Route path="/admin-dashboard" element={<AdminDashboard />} />
-        }
+        {/* } */}
       </Routes>
       <ToastContainer />
       <Footer />

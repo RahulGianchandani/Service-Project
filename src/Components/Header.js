@@ -81,14 +81,14 @@ const Header = () => {
                                 Admin
                             </NavLink>
                         }
-                        {token === "admin" &&
+                        {/* {token === "admin" && */}
                             <NavLink
                                 to="/admin-dashboard"
                                 className={" text-decoration-none text-white ms-lg-5 fw-bold"}
                             >
                                 Dashboard
                             </NavLink>
-                        }
+                        {/* } */}
                         {token === "admin" &&
                             <span className='text-sm cursor-pointer ms-lg-5 fw-bold text-white' onClick={logout}> Logout</span>
                         }
