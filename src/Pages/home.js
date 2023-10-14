@@ -58,7 +58,7 @@ const Home = () => {
                   <div className='text-white text-center textDiv '>
                     <h6 className='h4 mb-4'>Service description</h6>
                     <p className='text-center h-36 px-14 mt-2 text-lg'>
-                    lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum  lorep ipsum
+                      lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum  lorep ipsum
                     </p>
                     <button className='mt-4  py-2 mb-4 font-semibold text-[#656B6F] relative hover:text-[#336cd7] duration-300'>
                       BOOK SERVICE
@@ -75,7 +75,7 @@ const Home = () => {
                   <div className='text-white text-center textDiv '>
                     <h6 className='h4 mb-4'>Service description</h6>
                     <p className='text-center h-36 px-14 mt-2 text-lg'>
-                    lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum  lorep ipsum
+                      lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum  lorep ipsum
                     </p>
                     <button className='mt-4  py-2 mb-4 font-semibold text-[#656B6F] relative hover:text-[#336cd7] duration-300'>
                       BOOK SERVICE
@@ -91,7 +91,7 @@ const Home = () => {
                   <div className='text-white text-center textDiv '>
                     <h6 className='h4 mb-4'>Service description</h6>
                     <p className='text-center h-36 px-14 mt-2 text-lg'>
-                    lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum  lorep ipsum
+                      lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum  lorep ipsum
                     </p>
                     <button className='mt-4  py-2 mb-4 font-semibold text-[#656B6F] relative hover:text-[#336cd7] duration-300'>
                       BOOK SERVICE
@@ -107,7 +107,7 @@ const Home = () => {
                   <div className='text-white text-center textDiv '>
                     <h6 className='h4 mb-4'>Service description</h6>
                     <p className='text-center h-36 px-14 mt-2 text-lg'>
-                    lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum  lorep ipsum
+                      lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum  lorep ipsum
                     </p>
                     <button className='mt-4  py-2 mb-4 font-semibold text-[#656B6F] relative hover:text-[#336cd7] duration-300'>
                       BOOK SERVICE
@@ -123,7 +123,7 @@ const Home = () => {
                   <div className='text-white text-center textDiv '>
                     <h6 className='h4 mb-4'>Service description</h6>
                     <p className='text-center h-36 px-14 mt-2 text-lg'>
-                    lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum  lorep ipsum
+                      lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum  lorep ipsum
                     </p>
                     <button className='mt-4  py-2 mb-4 font-semibold text-[#656B6F] relative hover:text-[#336cd7] duration-300'>
                       BOOK SERVICE
@@ -132,6 +132,103 @@ const Home = () => {
                 </div>
               </div>
             </Link>
+            <Link to="/book-service">
+              <div className='service   service7  duration-300'>
+                <div className='relative mainTextDiv'>
+                  <h6 className='text-white text-center h2 !mt-3 mb-6'>Service 7</h6>
+                  <div className='text-white text-center textDiv '>
+                    <h6 className='h4 mb-4'>Service description</h6>
+                    <p className='text-center h-36 px-14 mt-2 text-lg'>
+                      lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum  lorep ipsum
+                    </p>
+                    <button className='mt-4  py-2 mb-4 font-semibold text-[#656B6F] relative hover:text-[#336cd7] duration-300'>
+                      BOOK SERVICE
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </Link>
+            <Link to="/book-service">
+              <div className='service   service8  duration-300'>
+                <div className='relative mainTextDiv'>
+                  <h6 className='text-white text-center h2 !mt-3 mb-6'>Service 8</h6>
+                  <div className='text-white text-center textDiv '>
+                    <h6 className='h4 mb-4'>Service description</h6>
+                    <p className='text-center h-36 px-14 mt-2 text-lg'>
+                      lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum  lorep ipsum
+                    </p>
+                    <button className='mt-4  py-2 mb-4 font-semibold text-[#656B6F] relative hover:text-[#336cd7] duration-300'>
+                      BOOK SERVICE
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </Link>
+            <Link to="/book-service">
+              <div className='service   service9  duration-300'>
+                <div className='relative mainTextDiv'>
+                  <h6 className='text-white text-center h2 !mt-3 mb-6'>Service 9</h6>
+                  <div className='text-white text-center textDiv '>
+                    <h6 className='h4 mb-4'>Service description</h6>
+                    <p className='text-center h-36 px-14 mt-2 text-lg'>
+                      lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum  lorep ipsum
+                    </p>
+                    <button className='mt-4  py-2 mb-4 font-semibold text-[#656B6F] relative hover:text-[#336cd7] duration-300'>
+                      BOOK SERVICE
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </Link>
+            <Link to="/book-service">
+              <div className='service   service10  duration-300'>
+                <div className='relative mainTextDiv'>
+                  <h6 className='text-white text-center h2 !mt-3 mb-6'>Service 10</h6>
+                  <div className='text-white text-center textDiv '>
+                    <h6 className='h4 mb-4'>Service description</h6>
+                    <p className='text-center h-36 px-14 mt-2 text-lg'>
+                      lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum  lorep ipsum
+                    </p>
+                    <button className='mt-4  py-2 mb-4 font-semibold text-[#656B6F] relative hover:text-[#336cd7] duration-300'>
+                      BOOK SERVICE
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </Link>
+            <Link to="/book-service">
+              <div className='service   service11  duration-300'>
+                <div className='relative mainTextDiv'>
+                  <h6 className='text-white text-center h2 !mt-3 mb-6'>Service 11</h6>
+                  <div className='text-white text-center textDiv '>
+                    <h6 className='h4 mb-4'>Service description</h6>
+                    <p className='text-center h-36 px-14 mt-2 text-lg'>
+                      lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum  lorep ipsum
+                    </p>
+                    <button className='mt-4  py-2 mb-4 font-semibold text-[#656B6F] relative hover:text-[#336cd7] duration-300'>
+                      BOOK SERVICE
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </Link>
+            <Link to="/book-service">
+              <div className='service   service12  duration-300'>
+                <div className='relative mainTextDiv'>
+                  <h6 className='text-white text-center h2 !mt-3 mb-6'>Service 12</h6>
+                  <div className='text-white text-center textDiv '>
+                    <h6 className='h4 mb-4'>Service description</h6>
+                    <p className='text-center h-36 px-14 mt-2 text-lg'>
+                      lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum  lorep ipsum
+                    </p>
+                    <button className='mt-4  py-2 mb-4 font-semibold text-[#656B6F] relative hover:text-[#336cd7] duration-300'>
+                      BOOK SERVICE
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </Link>
+
           </div>
         </div>
       </section>

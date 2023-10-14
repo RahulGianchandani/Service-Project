@@ -173,6 +173,90 @@ const BookService = () => {
                         <div className="text-white text-center px-5 textDiv "> lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum</div>
                       </div>
                     </div>
+                    <div
+                      className={`service service6  duration-300 h-52  ${serviceName === "Service7" ? "SelectedService" : ""}`}
+                      onClick={() => {
+                        setServiceName("Service7");
+                        setFormData({ ...formData, serviceType: "ServiceType6" });
+                      }}
+                    >
+                      <div className="relative ">
+                        <h6 className="text-white text-center h2 mt-3 mb-6">
+                          Service7
+                        </h6>
+                        <div className="text-white text-center px-5 textDiv "> lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum</div>
+                      </div>
+                    </div>
+                    <div
+                      className={`service service6  duration-300 h-52  ${serviceName === "Service8" ? "SelectedService" : ""}`}
+                      onClick={() => {
+                        setServiceName("Service8");
+                        setFormData({ ...formData, serviceType: "ServiceType6" });
+                      }}
+                    >
+                      <div className="relative ">
+                        <h6 className="text-white text-center h2 mt-3 mb-6">
+                          Service8
+                        </h6>
+                        <div className="text-white text-center px-5 textDiv "> lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum</div>
+                      </div>
+                    </div>
+                    <div
+                      className={`service service6  duration-300 h-52  ${serviceName === "Service9" ? "SelectedService" : ""}`}
+                      onClick={() => {
+                        setServiceName("Service9");
+                        setFormData({ ...formData, serviceType: "ServiceType6" });
+                      }}
+                    >
+                      <div className="relative ">
+                        <h6 className="text-white text-center h2 mt-3 mb-6">
+                          Service9
+                        </h6>
+                        <div className="text-white text-center px-5 textDiv "> lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum</div>
+                      </div>
+                    </div>
+                    <div
+                      className={`service service6  duration-300 h-52  ${serviceName === "Service10" ? "SelectedService" : ""}`}
+                      onClick={() => {
+                        setServiceName("Service10");
+                        setFormData({ ...formData, serviceType: "ServiceType6" });
+                      }}
+                    >
+                      <div className="relative ">
+                        <h6 className="text-white text-center h2 mt-3 mb-6">
+                          Service10
+                        </h6>
+                        <div className="text-white text-center px-5 textDiv "> lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum</div>
+                      </div>
+                    </div>
+                    <div
+                      className={`service service6  duration-300 h-52  ${serviceName === "Service11" ? "SelectedService" : ""}`}
+                      onClick={() => {
+                        setServiceName("Service11");
+                        setFormData({ ...formData, serviceType: "ServiceType6" });
+                      }}
+                    >
+                      <div className="relative ">
+                        <h6 className="text-white text-center h2 mt-3 mb-6">
+                          Service11
+                        </h6>
+                        <div className="text-white text-center px-5 textDiv "> lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum</div>
+                      </div>
+                    </div>
+                    <div
+                      className={`service service6  duration-300 h-52  ${serviceName === "Service12" ? "SelectedService" : ""}`}
+                      onClick={() => {
+                        setServiceName("Service12");
+                        setFormData({ ...formData, serviceType: "ServiceType6" });
+                      }}
+                    >
+                      <div className="relative ">
+                        <h6 className="text-white text-center h2 mt-3 mb-6">
+                          Service12
+                        </h6>
+                        <div className="text-white text-center px-5 textDiv "> lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum</div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </section>

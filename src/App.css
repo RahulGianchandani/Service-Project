@@ -244,6 +244,24 @@ footer .whatsappICON {
 #homePage #serviceSec .service6::before {
   background: url("https://source.unsplash.com/random/?gradient") no-repeat center center/cover;
 }
+#homePage #serviceSec .service7::before {
+  background: url("https://source.unsplash.com/random/?gradient") no-repeat center center/cover;
+}
+#homePage #serviceSec .service8::before {
+  background: url("https://source.unsplash.com/random/?gradient") no-repeat center center/cover;
+}
+#homePage #serviceSec .service9::before {
+  background: url("https://source.unsplash.com/random/?gradient") no-repeat center center/cover;
+}
+#homePage #serviceSec .service10::before {
+  background: url("https://source.unsplash.com/random/?gradient") no-repeat center center/cover;
+}
+#homePage #serviceSec .service11::before {
+  background: url("https://source.unsplash.com/random/?gradient") no-repeat center center/cover;
+}
+#homePage #serviceSec .service12::before {
+  background: url("https://source.unsplash.com/random/?gradient") no-repeat center center/cover;
+}
 
 #homePage #serviceSec .service:hover .mainTextDiv:before {
   height: 100%;
