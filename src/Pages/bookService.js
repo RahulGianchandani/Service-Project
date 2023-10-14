@@ -37,7 +37,7 @@ const BookService = () => {
       axios.post('http://172.16.1.58:3000/services', { ...formData })
         .then(res => {
           if (res?.data?.success) {
-            toast.success('🦄 Application Submitted Successfully!', {
+            toast.success('Application Submitted Successfully!', {
               position: "top-right",
               autoClose: 5000,
               hideProgressBar: false,

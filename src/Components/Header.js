@@ -21,7 +21,6 @@ const Header = () => {
     }, [])
 
     const location = useLocation();
-    console.log("location", location);
 
     return (
         <nav class={`navbar navbar-expand-lg header ${navBg ? "sticky" : ""} max-sm:py-0 bg-black  `}>
@@ -78,6 +77,14 @@ const Header = () => {
                         >
                             Admin
                         </NavLink>
+                        {true &&
+                            <NavLink
+                                to="/admin-dashboard"
+                                className={" text-decoration-none text-white ms-lg-5 fw-bold"}
+                            >
+                                Dashboard
+                            </NavLink>
+                        }
 
                     </ul>
                 </div>
