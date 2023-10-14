@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Service-Project/static/css/main.76347e31.css",
-    "main.js": "/Service-Project/static/js/main.15e1276b.js",
+    "main.css": "/Service-Project/static/css/main.c66cb079.css",
+    "main.js": "/Service-Project/static/js/main.75e5e43e.js",
     "static/js/787.228cfe5d.chunk.js": "/Service-Project/static/js/787.228cfe5d.chunk.js",
     "static/media/test3.jpg": "/Service-Project/static/media/test3.ad9867d13f9fcb061288.jpg",
     "static/media/test5.jpg": "/Service-Project/static/media/test5.cc49e794d0292be0137b.jpg",
@@ -26,12 +26,12 @@
     "static/media/dentist4-section-bg8.webp": "/Service-Project/static/media/dentist4-section-bg8.4dcb6469bb7d0e9bd8c4.webp",
     "static/media/logo.svg": "/Service-Project/static/media/logo.458810443dc68c2900e6c985078e8f99.svg",
     "index.html": "/Service-Project/index.html",
-    "main.76347e31.css.map": "/Service-Project/static/css/main.76347e31.css.map",
-    "main.15e1276b.js.map": "/Service-Project/static/js/main.15e1276b.js.map",
+    "main.c66cb079.css.map": "/Service-Project/static/css/main.c66cb079.css.map",
+    "main.75e5e43e.js.map": "/Service-Project/static/js/main.75e5e43e.js.map",
     "787.228cfe5d.chunk.js.map": "/Service-Project/static/js/787.228cfe5d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.76347e31.css",
-    "static/js/main.15e1276b.js"
+    "static/css/main.c66cb079.css",
+    "static/js/main.75e5e43e.js"
   ]
 }
